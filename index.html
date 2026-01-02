@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanklein Ink - Tattoo Studio</title>
+    <link rel="icon" href="https://imgur.com/r0sRCdF.png" type="image/png">
+    <meta property="og:title" content="Vanklein Ink - Tattoo Studio">
+    <meta property="og:description" content="Arte permanente en tu piel. Estudio de tatuajes profesional.">
+    <meta property="og:image" content="https://imgur.com/r0sRCdF.png">
+    <meta property="og:url" content="https://vanklein.ink">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Inline styles for generated images to ensure they work immediately without file moving if possible, 
+           but since I saved them to artifacts, I need to know their paths or move them. 
+           For this environment, I will assume they are in the 'assets' folder effectively or I should move them.
+           Wait, I cannot access the artifact path directly in HTML unless I move them to the working directory.
+           I will write a script to move them or just reference them if they were in the workspace.
+           Actually, the 'generate_image' tool saves to artifacts. I need to move them to the workspace to use them in HTML.
+           I will handle the file moving in the next step. For now, I will use placeholder filenames in the HTML 
+           and then move the files to match these names.
+        */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <button class="menu-btn" aria-label="Menu">
+                <i data-lucide="menu"></i>
+            </button>
+            <a href="#portfolio" class="nav-link mobile-hidden">TATTOOS</a>
+            <a href="#artists" class="nav-link mobile-hidden">ARTISTAS</a>
+        </div>
+
+        <div class="nav-center">
+            <a href="#" class="logo-container">
+                <img src="https://imgur.com/r0sRCdF.png" alt="Vanklein Ink" class="nav-logo">
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <a href="#location" class="nav-link mobile-hidden">UBICACIÓN</a>
+            <a href="#booking" class="btn-primary">RESERVAR</a>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <span>MENU</span>
+            <button class="close-menu-btn"><i data-lucide="x"></i></button>
+        </div>
+        <div class="mobile-links">
+            <a href="#portfolio">Tattoos</a>
+            <a href="#artists">Artistas</a>
+            <a href="#location">Ubicación</a>
+            <a href="#booking">Reservar Cita</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>INK & SOUL</h1>
+                <p>Arte permanente en tu piel</p>
+                <a href="#portfolio" class="btn-hero">DESCUBRIR</a>
+            </div>
+            <div class="hero-background">
+                <video src="assets/video1.mp4" autoplay loop muted playsinline class="video-bg"></video>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="section-header">
+                <h2>LATEST WORK</h2>
+                <div class="filters">
+                    <button class="filter-btn active">Todo</button>
+                    <button class="filter-btn">Blackwork</button>
+                    <button class="filter-btn">Realismo</button>
+                    <button class="filter-btn">Minimalista</button>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="https://i.imgur.com/ubeok8n.png" alt="Tattoo Work" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/EWouKt3.png" alt="Tattoo Work" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/Gw16NXC.png" alt="Tattoo Work" class="gallery-img">
+                </div>
+                <div class="gallery-item large">
+                    <img src="https://i.imgur.com/AdKkZKM.png" alt="Tattoo Work" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/NBjgSSc.png" alt="Tattoo Work" class="gallery-img">
+                </div>
+                <!-- Duplicate first to fill grid -->
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/ubeok8n.png" alt="Tattoo Work" class="gallery-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="artists" class="artists-section">
+            <div class="artist-content">
+                <h2>ARTISTAS</h2>
+                <div class="artist-card">
+                    <div class="artist-info">
+                        <h3>Danita</h3>
+                        <p class="artist-sub">Resident Artist</p>
+                        <p class="artist-desc">17 años. Estudiante y Tatuadora. Transformando ideas en arte.</p>
+                        <a href="https://www.instagram.com/lp_.danita/" target="_blank" class="btn-secondary">
+                            <i data-lucide="instagram"></i> @lp_.danita
+                        </a>
+                    </div>
+                    <!-- Using one of the tattoo images or a placeholder for the artist profile if not provided, 
+                         but since none provided, I'll use a stylistic placeholder or just text focus. 
+                         I'll use the 'working' generated image as a background or side visual. -->
+                    <div class="artist-visual avatar-container">
+                        <img src="assets/artist_avatar.png" alt="Danita Avatar" class="artist-avatar">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="location" class="location-section">
+            <div class="location-container">
+                <div class="location-info">
+                    <h2>VISITANOS</h2>
+                    <p class="address">Encuéntranos en nuestra ubicación.<br>Haz clic en el mapa para llegar.</p>
+                    <div class="hours">
+                        <p>Lun - Sab: 11:00 - 20:00</p>
+                        <p>Dom: Cerrado</p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/LYwoi2gtY3Tm4Mka6?g_st=ii" target="_blank" class="btn-secondary">
+                        <i data-lucide="map-pin"></i> VER EN GOOGLE MAPS
+                    </a>
+                </div>
+                <div class="location-map-visual">
+                    <!-- Static map visual or studio abstract -->
+                    <a href="https://maps.app.goo.gl/LYwoi2gtY3Tm4Mka6?g_st=ii" target="_blank" class="map-link">
+                        <img src="https://i.imgur.com/7o494Q3.png" alt="Studio Location Map" class="location-img">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking-section">
+            <div class="booking-content">
+                <h2>RESERVA TU CITA</h2>
+                <p>Cuéntanos tu idea y hazla realidad.</p>
+                <a href="https://wa.me/525612061835?text=Hola%20que%20tal%20me%20gustaria%20agendar%20una%20cita%20para%20(dia)%20(hora)"
+                    target="_blank" class="btn-whatsapp">
+                    <i data-lucide="message-circle"></i> AGENDAR CITA
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://wa.me/525612061835" target="_blank">WhatsApp</a>
+                <a href="https://www.instagram.com/vanklein_.ink/" target="_blank">Instagram</a>
+            </div>
+            <p>&copy; 2025 Vanklein Ink Studio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
